@@ -1,0 +1,40 @@
+SIESTTA 2.0
+
+REQUERIMIENTOS:
+
+Siestta ha sido desarrollado usando el siguiente entorno
+por lo que debiera funcionar en versiones posteriores
+
+PHP Version 4.4.2-1
+MySQL - 4.1.15
+Apache 1.3.34
+
+
+INSTRUCCIONES PREVIAS A LA INSTALACIÓN VÍA WEB
+
+- Archivo .htaccess
+
+Se ha incluído un fichero .htacces que fuerza a Apache a codificar en UTF-8 y a denegar el listado de directorios. Esto en ocasiones puede generar problemas con el hosting. Si es así, se procederá a eliminarlo y a solicitar al hosting web que codifique en UTF-8 y deniegue el listado de directorios para la carpeta donde esté instalado SIESTTA.
+
+- Base de datos:
+
+Se debe crear una base de datos (usando la herramienta que proporcione el servicio de hosting que normalmente será "PhpMyAdmin"). Posteriormente, crearemos un usuario y le otorgaremos permisos para que administre esta base de datos. 
+Deberemos recordar el nombre del usuario, su contraseña y el nombre de la base de datos ya que necesitaremos esta
+información para la instalación vía web.
+
+- Permisos:
+
+Los directorios "fotos_al", "fotos_doc" y "archivos" del directorio "admin" deben tener 
+permisos de escritura
+
+El archivo "config.php" del directorio principal debe tener permisos de escritura. Tras la instalación 
+debiera otorgarse solamente permiso de lectura
+
+Las imágenes "logo.jpg" y "logo_200.jpg" deberán sustituirse por los logos que el centro desee presentar
+en sus informes. Es importante respetar en la medida de lo posible las dimensiones
+
+ADVERTENCIA LEGAL
+
+SIESTTA 2.0 no es otra cosa que un fichero donde se almacenarán datos de carácter académico y personal. Por tanto, el responsable de este fichero (el administrador de SIESTTA) deberá tener en cuenta que la legislación española obliga a inscribir su existencia en la Agencia Española de Protección de Datos. El paquete incluye los avisos en las dos pantallas de acceso por lo que resta comunicar a la AEPD la existencia de este fichero.
+
+Es muy importante que esto sea tenido en cuenta pues será el propietario de la IP donde esté alojado SIESTTA el que detente esta responsabilidad (el centro educativo, el administrador, etc). 

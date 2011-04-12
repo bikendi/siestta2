@@ -1,0 +1,3 @@
+Incluir la carpeta "pda" en el directorio principal de SIESTTA
+
+Abrir el navegador y dirigirse a la carpeta pda (http://dominio/siestta/pda)

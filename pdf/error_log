@@ -1,0 +1,8 @@
+[23-Jun-2009 17:38:00] PHP Parse error:  syntax error, unexpected ';' in /home/ramoncas/public_html/siestta/siestta2/pdf/boletines_fin.php on line 18
+[23-Jun-2009 17:39:26] PHP Parse error:  syntax error, unexpected '>' in /home/ramoncas/public_html/siestta/siestta2/pdf/boletines_fin.php on line 18
+[23-Jun-2009 17:43:49] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ramoncas/public_html/siestta/siestta2/pdf/boletines_fin.php:34) in /home/ramoncas/public_html/siestta/siestta2/pdf/fpdf.php on line 1665
+[23-Jun-2009 17:47:17] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ramoncas/public_html/siestta/siestta2/pdf/boletines_fin.php:56) in /home/ramoncas/public_html/siestta/siestta2/pdf/fpdf.php on line 1665
+[23-Jun-2009 17:48:41] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ramoncas/public_html/siestta/siestta2/pdf/boletines_fin.php:60) in /home/ramoncas/public_html/siestta/siestta2/pdf/fpdf.php on line 1665
+[23-Jun-2009 18:06:56] PHP Fatal error:  Cannot redeclare class HTML2FPDF in /home/ramoncas/public_html/siestta/siestta2/pdf/html2fpdf.php on line 65
+[28-Jan-2010 12:20:48] PHP Warning:  Unexpected character in input:  '\' (ASCII=92) state=1 in /home/ramoncas/public_html/siestta/siestta2/pdf/ficha_pdf.php on line 1135
+[28-Jan-2010 12:20:48] PHP Parse error:  syntax error, unexpected '<' in /home/ramoncas/public_html/siestta/siestta2/pdf/ficha_pdf.php on line 1136
