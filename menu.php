@@ -55,7 +55,7 @@ echo '
 	<li><a href="#" onclick="miraMensajes()">'.$id_mismensajes.'</a></li>
 	
 </ul>
-<br /><p class="centrado"><a href="admin/ayuda/index.html" title="'.$id_ayuda.'" target="_blank"><img src="imgs/ayuda.png" alt="'.$id_ayuda.'" /></a>&nbsp;&nbsp;<a href="salir.php" title="'.$id_descon.'"><img src="imgs/salir.png" alt="'.$id_descon.'" /></a>';
+<br /><!--p class="centrado"><a href="admin/ayuda/index.html" title="'.$id_ayuda.'" target="_blank"><img src="imgs/ayuda.png" alt="'.$id_ayuda.'" /></a>&nbsp;&nbsp;<a href="salir.php" title="'.$id_descon.'"><img src="imgs/salir.png" alt="'.$id_descon.'" /></a>';
 
 if($_SESSION['rol_sesion'] == 'admin')
 	{

@@ -29,10 +29,11 @@ if (isset($_POST['txt_login']) && isset($_POST['pwd_clave']))
 		$rol = $reg_usuario['rol'];
 			if($rol == '0') $perfil = 'doc';
 			if($rol == '1') $perfil = 'admin';
-	 		 	
-	 	$_SESSION['usuario_sesion'] = $usuario;
+	 	
+		$_SESSION['usuario_sesion'] = $usuario;
 	 	$_SESSION['rol_sesion'] = $perfil;
 		$_SESSION['nombre_sesion']=$nombre;
+		
 		$_SESSION['apellidos_sesion']=$apellidos;
 		$_SESSION['especialidad_sesion']=$especialidad;
 	 	}
@@ -49,6 +50,7 @@ SIESTTA (Sistema Informático Especializado en el Seguimiento Tutorial del Alumn
 
 
     Copyright (C) 2007  Ramón Castro Pérez
+    Copyright (C) 2011  José Federico Muñoz Rubio <jomuoru@gmail.com>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -92,7 +94,6 @@ else
 	}
 
 $usuario_activo = $_SESSION['usuario_sesion'];
-
 if (isset($_SESSION['usuario_sesion']))
 {
 echo '<div id="contenedor">';
@@ -100,9 +101,19 @@ echo '<div id="header">';
 $nombre=$_SESSION['nombre_sesion'];
 $apellidos=$_SESSION['apellidos_sesion'];
 $especialidad=$_SESSION['especialidad_sesion'];
-echo '<span class="blanco"><img src="imgs/usuario.png" /><a href="'.$web.'" target="_blank">'.$nombre.' '.$apellidos.'</a> ( '.$especialidad.' )</span>';
+echo '<span class="blanco"><img src="imgs/usuario.png" /><!--a href="'.$web.'" target="_blank"-->'.$nombre.' '.$apellidos.'<!--/a--></span>';
 echo '<span id="cargando" /><img src="imgs/cargando.gif" title="'.$id_cargando.'" /></span>';
+echo "<span style=\"float:right\">";
 
+echo '<a href="admin/ayuda/index.html" title="'.$id_ayuda.'" target="_blank"> Documentación </a>';
+
+if($_SESSION['rol_sesion'] == 'admin')
+	{
+	echo '<a href="admin/panel.php" title="'.$id_admin.'"> Administración </a>';
+	}
+
+echo '<a href="salir.php" title="'.$id_descon.'"> Salir </a>';
+echo "</span>";
 echo '</div>';
 
 echo '<div id="left">';
@@ -125,7 +136,10 @@ echo '<div id="footer">';
 echo '<br/>';
 echo '<a id="web" href="http://siestta.org" target="_blank">SIESTTA 2.0</a> es software libre bajo licencia <a id="gnu" href="http://www.gnu.org/copyleft/gpl.html" target="_blank">GNU General Public License</a>';
 echo '<br />';
+echo '<a id="autorweb" href="http://jomuoru.net" target="_blank">José Federico Muñoz Rubio</a> 2011';
+echo '<br />';
 echo '<a id="autorweb" href="http://ramoncastro.es" target="_blank">Ram&oacute;n Castro P&eacute;rez</a> 2007';
+echo '</div>';
 echo '</div>';
 echo '</div>';
 ////////////////////////////////////////////////////////////////////////
