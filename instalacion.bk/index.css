@@ -1,0 +1,104 @@
+/*
+This file is part of SIESTTA (Sistema Informático Especializado en el Seguimiento Tutorial del Alumnado).
+
+SIESTTA (Sistema Informático Especializado en el Seguimiento Tutorial del Alumnado) is developed by Ram&oacute;n Castro P&eacute;rez. You can get more information at http://www.ramoncastro.es
+
+SIESTTA (Sistema Informático Especializado en el Seguimiento Tutorial del Alumnado) is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+SIESTTA (Sistema Informático Especializado en el Seguimiento Tutorial del Alumnado) includes  the FPDF class (http://www.fpdf.org) in the “pdf” directory and some scripts use this class.
+
+SIESTTA (Sistema Informático Especializado en el Seguimiento Tutorial del Alumnado) is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+	
+You cand find a copy of the GNU General Public License in the "license" directory.
+
+You should have received a copy of the GNU General Public License along with SIESTTA; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA.  
+*/
+*{
+margin:0;
+padding:0;
+}
+
+body{
+font-family: Andale Mono;
+font-size:16px;
+}
+#header{ 
+height:80px;
+background:#333 url(../imgs/logo.png) no-repeat center center;
+line-height:140px;
+color:white;
+}
+#header a{
+color:white;
+}
+
+#center { 
+background-color:#eec; 
+min-height:650px; /* for modern browsers */
+height:auto !important; /* for modern browsers */
+height:650px; /* for IE5.x and IE6 */
+text-align:center;
+border:solid 1px #333;
+}
+
+#center li{
+margin:10px;
+padding:10px;
+list-style:none;
+}
+#error
+{
+background-color:#eec; 
+min-height:650px; /* for modern browsers */
+height:auto !important; /* for modern browsers */
+height:650px; /* for IE5.x and IE6 */
+text-align:center;
+border:solid 1px #333;
+}
+#error a{
+color:black;
+}
+.tablacentrada{
+margin:auto;
+border:1px solid #dc8;
+padding: 4px;
+}
+.centrado{
+text-align:center;
+margin:auto;
+}
+.encab{
+text-align:center;
+font-weight:bold;
+}
+.justificado{
+text-align:justify;
+}
+.derecha{
+text-align:right;
+padding:4px;
+border:1px solid #dc8;
+}
+.textarea {
+text-align:justify;
+width:500px;
+height:250px;
+border: 1px solid #333;
+}
+
+input{
+border:1px solid #444;
+margin:4px;
+font-size:10px; 
+}
+
+input:hover{
+border:1px solid #0021a5;
+}
+.texto{
+border:1px dotted black;
+}
+.seccion{
+color:black;
+}
